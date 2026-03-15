@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>United Caravan Trading & Contracting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+transition:background 0.3s,color 0.3s;
+}
+
+/* LIGHT MODE */
+
+body{
+background:#ffffff;
+color:#111;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+nav img{
+height:55px;
+}
+
+.toggle{
+font-size:22px;
+cursor:pointer;
+background:none;
+border:none;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+background:url("https://aristotleair.com/wp-content/uploads/2024/10/a-photo-of-a-large-air-handler-unit-in-an-hvac-sys-dyj_jnLGQcCWU7crvDX75w-hTyvnyHQNiInbIGfJkDBw.jpeg") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+color:#ff3b2e;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* ARAMCO SECTION */
+
+.aramco{
+background:#111;
+color:white;
+text-align:center;
+padding:80px 40px;
+}
+
+.aramco h2{
+font-size:50px;
+color:#ff3b2e;
+margin-bottom:20px;
+}
+
+/* GENERAL SECTIONS */
+
+section{
+padding:100px 80px;
+max-width:1300px;
+margin:auto;
+}
+
+h2{
+color:#ff3b2e;
+margin-bottom:25px;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:10px;
+}
+
+.callbtn{
+display:inline-block;
+margin-top:25px;
+padding:16px 40px;
+background:#ff3b2e;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-size:20px;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:50px;
+text-align:center;
+}
+
+.stat{
+background:#f6f6f6;
+padding:40px;
+border-radius:10px;
+}
+
+.stat h3{
+color:#ff3b2e;
+font-size:40px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service{
+background:#f6f6f6;
+padding:25px;
+border-radius:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+padding:60px;
+margin-top:60px;
+}
+
+.footergrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+
+footer h3{
+color:#ff3b2e;
+}
+
+/* DARK MODE */
+
+body.dark{
+background:#2a2a2a;
+color:#f5f5f5;
+}
+
+body.dark nav{
+background:#777;
+box-shadow:none;
+}
+
+body.dark section{
+background:#2a2a2a;
+}
+
+body.dark .stat{
+background:#3a3a3a;
+}
+
+body.dark .service{
+background:#3a3a3a;
+}
+
+body.dark .aramco{
+background:#1f1f1f;
+}
+
+body.dark footer{
+background:#1a1a1a;
+}
+
+body.dark h2{
+color:#ff4b3a;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<img src="http://unitedcaravan.com/logos/unitedCaravanLogo_sq.png">
+
+<button class="toggle" onclick="toggleMode()" id="modeBtn">🌙</button>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>United Caravan Trading & Contracting</h1>
+<p>Industrial Equipment • HVAC Systems • Oil & Gas Services</p>
+
+</div>
+
+</section>
+
+<section class="aramco">
+
+<h2>ARAMCO APPROVED CONTRACTOR</h2>
+
+<p>
+Delivering industrial solutions aligned with the standards required by Saudi energy sector projects including work connected with Aramco operations.
+</p>
+
+</section>
+
+<section>
+
+<h2>About The Company</h2>
+
+<div class="about">
+
+<div>
+
+<p>
+United Caravan Trading & Contracting is an engineering and industrial services company based in Dammam providing HVAC systems, oil and gas equipment supply and industrial machinery support.
+</p>
+
+<a class="callbtn" href="tel:+966500587569">Call Us Now</a>
+
+</div>
+
+<img src="https://www.jm.com/content/dam/jm/global/en/blog/blog-images/191120-HVAC-BP-03.jpg">
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>200+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat">
+<h3>300+</h3>
+<p>Clients Served</p>
+</div>
+
+<div class="stat">
+<h3>5+</h3>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Services</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>HVAC Installation</h3>
+<p>Commercial and industrial air conditioning installation.</p>
+</div>
+
+<div class="service">
+<h3>Oil & Gas Equipment</h3>
+<p>Supply of drilling tools and oilfield equipment.</p>
+</div>
+
+<div class="service">
+<h3>Industrial Machinery</h3>
+<p>Engineering equipment and hydraulic systems.</p>
+</div>
+
+<div class="service">
+<h3>Facility Maintenance</h3>
+<p>Maintenance support for commercial buildings.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Company Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYDRkhbC_nmsEoZsoFMBvWCL7f_ip9Ph7pw&s">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJk0clxeHibSHYf_p7e3WQziC6Qs_YSTpuIQ&s">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa3nntGA0VPHxAGdQjGLb8OjwzPfg9ToJmaQ&s">
+<img src="https://buckaroos.nyc3.cdn.digitaloceanspaces.com/blog/_transforms/_blogPost/2231/Screenshot-2024-05-15-091217.webp">
+<img src="https://mgcs.net.in/wp-content/uploads/2024/08/the-future-of-smart-hvac-trends-and-innovations.jpg">
+<img src="https://www.ul.com/sites/default/files/styles/hero_boxed_width/public/2020-08/air-ducts-iStock-625800460-2400x1600.jpg">
+<img src="https://cdn-bcmip.nitrocdn.com/LWYpPtijxKwKLwwLpUtNIVleacNKeUFK/assets/images/optimized/rev-d37b70d/rightnowheatcool.com/wp-content/uploads/2023/06/AC-Brands.png">
+<img src="https://www.refconchillers.com/blog/wp-content/uploads/2024/12/hvac-plants-system-for-industrial-efficiency.jpg">
+<img src="https://eraputra.com/wp-content/uploads/2025/03/20231110_084813-1080x675-1.webp">
+<img src="https://imagecdn.owenscorning.com/ocimages/image/upload/c_limit,f_auto,h_2160,q_auto/v1/pagebuilder/uploads/prod/19984468/Max-Lab-products-10">
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footergrid">
+
+<div>
+
+<h3>Contact</h3>
+<p>United Caravan Trading & Contracting</p>
+<p>Dammam, Saudi Arabia</p>
+<p>Phone: +966 50 058 7569</p>
+
+</div>
+
+<div>
+
+<h3>Business Hours</h3>
+
+<p>Sunday — 8 AM to 6 PM</p>
+<p>Monday — 7 AM to 4 PM</p>
+<p>Tuesday — 8 AM to 6 PM</p>
+<p>Wednesday — 8 AM to 6 PM</p>
+<p>Thursday — 8 AM to 6 PM</p>
+<p>Friday — Closed</p>
+<p>Saturday — Closed</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script>
+
+function toggleMode(){
+
+const body=document.body
+const btn=document.getElementById("modeBtn")
+
+body.classList.toggle("dark")
+
+if(body.classList.contains("dark")){
+btn.textContent="☀️"
+}else{
+btn.textContent="🌙"
+}
+
+}
+
+</script>
+
+</body>
+</html>
